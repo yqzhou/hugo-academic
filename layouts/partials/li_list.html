@@ -41,12 +41,6 @@
   </div>
   {{ end }}
 
-  {{ if and $show_authors $item.Params.authors }}
-  <div class="article-metadata" itemprop="author">
-    {{ partial "page_metadata_authors" $item }}
-  </div>
-  {{ end }}
-
   {{ if $show_buttons }}
   <div class="btn-links">
     {{ partial "page_links" (dict "content" $item "is_list" 1) }}
